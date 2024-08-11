@@ -86,10 +86,15 @@ Identify regular shapes from a set of curves. The task can be broken down into i
 4. Displaying the Results
   - The resultant image with detected shapes is resized based on the specified resize factor.
   - The resized image is displayed in a window, showing the detected shapes and their details.
+<img width="866" alt="image" src="https://github.com/user-attachments/assets/a5dae527-7e3f-43ff-9ae9-377577a1b8ef">
+
 
 ### Exploring Symmetry in Curves
 
 - Identify reflection symmetries in closed shapes. The task involves transforming the curve representation into points and fitting Bézier curves to the symmetric points.
+
+<img width="687" alt="image" src="https://github.com/user-attachments/assets/23ff5647-4aa7-43d8-9411-05525209fb7c">
+
 
 ### Completing Incomplete Curves
 
@@ -104,4 +109,6 @@ Identify regular shapes from a set of curves. The task can be broken down into i
    Rectangle: By calculating the bounding box.
    Polygon: For more complex shapes.
 - The function translates each regularized shape back to its original position and stores the results.
+
+<img width="297" alt="image" src="https://github.com/user-attachments/assets/4e3af8ab-6c47-4736-bf73-b27d3b3503a1">
 
