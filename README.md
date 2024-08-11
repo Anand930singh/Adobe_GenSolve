@@ -58,7 +58,7 @@ Identify regular shapes from a set of curves. The task can be broken down into i
 - Regular Polygons
 - Star Shapes
 
-####Steps we followed for regularozation
+### Steps we followed for regularozation
 1. Image Processing
   Loading Image and Converting Image to grayscale.
   We have used Canny Edge detection for identifying edges in the shape.
