@@ -81,13 +81,13 @@ Identify reflection symmetries in closed shapes. The task involves transforming 
 
 Develop algorithms to naturally complete incomplete 2D curves that have gaps due to occlusions. The challenge is to determine how to complete these curves by analyzing smoothness, regularity, and symmetry.
 
-### Steps we followed for completion of occludded shapes
+### Steps we followed for completion of occluded shapes
 1. We are extracting contours from the DataFrame based on path_id. Each contour represents a series of x and y coordinates for a specific shape.
 2. We are using DBSCAN clustering to separate overlapping shapes into distinct groups. It returns a list of separated shapes.
-3.Then we are trying fit each separated shape into a standard geometric form:
+3. Then we are trying fit each separated shape into a standard geometric form:
 Circle: Using the Hough Transform.
 Ellipse: Using an ellipse fitting model.
 Rectangle: By calculating the bounding box.
 Polygon: For more complex shapes.
-4.The function translates each regularized shape back to its original position and stores the results.
+4. The function translates each regularized shape back to its original position and stores the results.
 
