@@ -58,7 +58,7 @@ Identify regular shapes from a set of curves. The task can be broken down into i
 - Regular Polygons
 - Star Shapes
 
-### Steps we followed for regularozation
+### Steps we followed for regularization
 1. Image Processing
   Loading Image and Converting Image to grayscale.
   We have used Canny Edge detection for identifying edges in the shape.
@@ -80,3 +80,14 @@ Identify reflection symmetries in closed shapes. The task involves transforming 
 ### 3. Completing Incomplete Curves
 
 Develop algorithms to naturally complete incomplete 2D curves that have gaps due to occlusions. The challenge is to determine how to complete these curves by analyzing smoothness, regularity, and symmetry.
+
+### Steps we followed for completion of occludded shapes
+We are extracting contours from the DataFrame based on path_id. Each contour represents a series of x and y coordinates for a specific shape.
+We are using DBSCAN clustering to separate overlapping shapes into distinct groups. It returns a list of separated shapes.
+Then we are trying fit each separated shape into a standard geometric form:
+Circle: Using the Hough Transform.
+Ellipse: Using an ellipse fitting model.
+Rectangle: By calculating the bounding box.
+Polygon: For more complex shapes.
+The function translates each regularized shape back to its original position and stores the results.
+
